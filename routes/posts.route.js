@@ -53,7 +53,7 @@ const updatePost = async (req, res) => {
             },
             {
                 where: {
-                    [Op.and]: [postId]
+                    [Op.and]: [postId] // Op는 비교할 때
                 }
             }
         ); // 조회한 게시글의 제목과 내용을 HTTP 요청에서 가져온 값으로 수정합니다.
